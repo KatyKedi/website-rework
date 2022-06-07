@@ -1,14 +1,248 @@
 * {
     margin: 0;
     padding: 0;
-    color:black
+    text-align: center;
 }
-header {
-    display:flex;
-    justify-content:space-evenly;
+
+html {
+    height: 100%;
+    overflow: auto;
+    font-family: 'El Messiri', sans-serif;
 }
-body{
-    background-color: #734ae8;
+
+body {
     background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: auto;
 }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header, main {
+    border-bottom: solid #95eae4;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+#title {
+    font-family: 'My Soul', cursive;
+    font-size: 5em;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 2em;
+}
+
+.nav {
+    padding: 2%;
+    border-radius: 10%;
+    font-family: 'My Soul', cursive;
+    font-size: 1.5em;
+}
+
+.nav:hover {
+    background-color: #89d4cf;
+}
+
+footer {
+    padding: 3%;
+}
+
+footer p {
+    padding: 3%;
+}
+
+#footer {
+    font-size: 2em;
+}
+
+#call-now {
+    font-size: 3em;
+}
+
+/* Home */
+#experience {
+    text-decoration: dotted;
+}
+
+#main-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+
+.main-divs {
+    width: 50%;
+}
+
+#main-p {
+    padding: 2%;
+    font-size: 2em;
+}
+
+/* Services */
+
+#services {
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+.service-header {
+    padding-top: 2%;
+}
+
+.service-div {
+    width: 50%;
+    font-size: 2em;
+}
+
+.service-div ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-div ul li {
+    padding: 1%;
+}
+
+.stars {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+/* About Me */
+
+#about {
+    font-size: 2em;
+    padding: 3%;
+    border-bottom: solid #95eae4;
+}
+
+/* Flames */
+
+#flames {
+    display: flex;
+    justify-content: space-between;
+
+}
+  
+  .container{
+    margin:80px auto;
+    width: 60px;
+    height: 60px;
+    position:relative;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  .flame{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform:rotate(-45deg) scale(1.5,1.5);
+  }
+  
+  .yellow{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+  
+  .orange{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:orange;
+    box-shadow: 0px 0px 9px 4px orange;
+  }
+  
+  .red{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:OrangeRed;
+    box-shadow: 0px 0px 5px 4px OrangeRed;
+  }
+  
+  .white{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px white;
+  }
+  
+  .circle{
+    border-radius: 50%;
+    position:absolute;  
+  }
+  
+  .blue{
+    width: 10px;
+    height: 10px;
+    left:25px;
+    bottom:-25px; 
+    background: SlateBlue;
+    box-shadow: 0px 0px 15px 10px SlateBlue;
+  }
+  
+  .black{
+    width: 40px;
+    height: 40px;
+    left:10px;
+    bottom:-60px;  
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  
+  @keyframes flicker{
+    0%   {transform: rotate(-1deg);}
+    20%  {transform: rotate(1deg);}
+    40%  {transform: rotate(-1deg);}
+    60%  {transform: rotate(1deg) scaleY(1.04);}
+    80%  {transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+  }
