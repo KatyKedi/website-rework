@@ -247,3 +247,11 @@ footer p {
   }
 
   /* Media queries */
+
+  @media screen and (max-width: 768px) {
+
+    img {
+        max-width: 85%;
+        height: auto;
+    }
+  }
